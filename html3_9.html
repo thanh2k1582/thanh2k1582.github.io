@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css3.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Tâm à </h2>
+        <h2>Em sẽ là của chú</h2>
+        <div class="circle"></div>
+    </section>
+
+    <script type="text/javascript">
+        const pos = document.documentElement;
+        pos.addEventListener('mousemove',e => {
+            pos.style.setProperty('--x',e.clientX + 'px');
+            pos.style.setProperty('--y',e.clientY + 'px');
+        })
+    </script>
+
+</body>
+</html>
